@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Animation</title>
+</head>
+<body>
+    <nav class="navbar navbar-top">
+        <div>
+            <h1 class="navbar-brand">Custom nav</h1>
+        </div>
+        <div>
+            <ul class="navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="showcase">
+        <div class="img">
+            <img src="1.jpeg" alt="">
+        </div>
+        <div class="showtext">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  error praesentium dolorum hic distinctio expedita cupiditate.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+    <section class="blockquote">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloribus, reprehenderit nostrum iste molestias unde, itaque id, corrupti consequatur quis sunt neque adipisci labore harum debitis asperiores provident ducimus sequi.</p>
+        <p><small>~ John Doe</small></p>
+    </section>
+    <section id="boxes">
+        <div class="box box1">
+            <h2>What</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consectetur dolore iure amet esse similique illum inventore eligendi deserunt nemo!</p>
+        </div>
+        <div class="box box2">
+            <h2>When</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, culpa nam voluptas qui voluptatem aut cumque amet rerum asperiores fuga.</p>
+        </div>
+    </section>
+    <div style="margin:500px;"></div>
+    <!-- JavaScript -->
+    <script>
+        window.sr = ScrollReveal({reset:true});
+        sr.reveal('.navbar-brand',{
+            duration:1000,
+            origin:'right'
+        });
+        sr.reveal('.navbar-right',{
+            duration:1000,
+            origin:'left'
+        });
+        sr.reveal('.img img',{
+            duration:700,
+            delay:500,
+            origin:'top'
+        });
+        sr.reveal('.showtext',{
+            duration:700,
+            delay:700,
+            origin:'bottom'
+        });
+        sr.reveal('.blockquote p',{
+            duration:1000,
+            viewFactor:0.8
+        });
+        sr.reveal('.blockquote small',{
+            duration:700,
+            delay:300,
+            viewFactor: 0.8
+        });
+        sr.reveal('.box1', {
+            duration: 700,
+            origin:'left',
+            viewFactor:0.8
+        });
+        sr.reveal('.box2', {
+            duration: 700,
+            delay: 300,
+            origin:'right',
+            viewFactor:0.8
+        },500);
+    </script>
+</body>
+</html>

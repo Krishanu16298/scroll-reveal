@@ -1,0 +1,85 @@
+body{
+    margin:0;
+}
+.navbar{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:10px 50px;
+    font-family: Poppins;
+    background:rgba(240,240,240,0.8);
+}
+.navbar-fixed{
+    top:0;
+    left:0;
+}
+.navbar .navbar-brand{
+    margin:0;
+}
+.navbar ul{
+    padding-left:0;
+    margin:5px;
+}
+.navbar ul li{
+    display: inline;
+    list-style-type: none;
+    padding:0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    transition: all 0.1 ease-in-out;
+}
+.navbar ul li a:hover{
+    color:#0044dd;
+}
+.navbar .navbar-right{
+    text-align: right;
+}
+
+#showcase{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Poppins;
+    width:80%;
+    margin:100px auto;
+}
+#showcase .img{
+    text-align: center;
+}
+#showcase .showtext{
+    padding-top:70px;
+}
+.btn{
+    text-decoration: none;
+    color:#000;
+    border:1px #333 solid;
+    border-radius:5px;
+    padding:5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    background: black;
+    color:#fff;
+}
+#showcase .img img{
+    width:70%
+}
+.blockquote{
+    font-family: Poppins;
+    background: #ddd;
+    padding:40px 50px;
+    text-align: center;
+}
+#boxes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width:90%;
+    font-family: Poppins;
+    margin:30px auto;
+}
+#boxes .box{
+    padding:20px;
+    margin:10px;
+}
